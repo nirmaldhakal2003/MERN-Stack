@@ -21,4 +21,3 @@ app.listen(process.env.PORT,()=>{
     console.log('Node js has been started: ')
 })
 
-// mongodb+srv://nirmal2003:<password>@cluster0.3pnxo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
