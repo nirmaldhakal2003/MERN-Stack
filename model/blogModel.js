@@ -1,24 +1,19 @@
-const mongoose = require('mongose')
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-
-
 const blogSchema = new Schema({
     title : {
-        type : String,
+        type : String, 
         unique : true
-    },
+    }, 
     subtitle : {
         type : String
-    },
+    }, 
     description : {
-        type : Text
-    },
+        type : String
+    }, 
     image : {
-        type: String
+        type : String
     }
 })
-
-const Blog = mongoose.model('Blog', blogSchema)
+const Blog = mongoose.model('Blog',blogSchema)
 module.exports = Blog
-
-
