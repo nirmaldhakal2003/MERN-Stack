@@ -50,6 +50,7 @@ app.get("/blog/:id",async (req,res)=>{
     const id = req.params.id
     const blog =  await Blog.findById(id) // object
 
+    
     if(!blog){
         return res.status(404).json({
             message : "no data found"
